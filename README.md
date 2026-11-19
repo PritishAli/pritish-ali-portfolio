@@ -28,11 +28,27 @@ Opening `index.html` by double-clicking won't work, because browsers block modul
 - run `npx serve .` in this folder (needs Node), or
 - in VS Code, install the **Live Server** extension and click "Go Live".
 
-## Redeploy to Vercel
+## Update the live site (auto-deploy)
 
-1. Go to https://vercel.com/new.
-2. Drag this whole `portfolio` folder onto the page, or click "folder" and choose it.
-3. Deploy. Your project is **pritish-ali**, so updates replace the old version at the same URL.
+This folder is connected to GitHub (`PritishAli/pritish-ali-portfolio`), and Vercel watches it. Every push to `main` updates https://pritish-ali.vercel.app in about 30 seconds.
+
+First time on your computer (needs Git installed):
+
+```
+cd D:\CV
+git clone https://github.com/PritishAli/pritish-ali-portfolio portfolio-git
+```
+
+Then, every time you change something:
+
+```
+cd D:\CV\portfolio-git
+git add -A
+git commit -m "Update projects"
+git push
+```
+
+No Git? On github.com, open the repo, click a file (e.g. `js/content.js`), click the pencil icon, edit, and press **Commit changes**. That deploys too.
 
 ## Contact form
 
