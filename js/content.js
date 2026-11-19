@@ -8,7 +8,7 @@
 export const profile = {
   firstName: "Pritish",
   lastName: "Ali",
-  title: "AI & Full-Stack Developer",
+  title: "AI & ML Engineer, Full-Stack Developer",
   // The green pill at the top. Set available: false to hide it.
   available: true,
   availability: "Available for freelance and contract projects",
